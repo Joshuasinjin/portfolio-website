@@ -5,6 +5,16 @@ secondary color (green): #1A5C3C;
 secondary color (red):  #630505;
 text color (white): #FFFFFF;
 */
+header {
+  background-color: #1A5C3C;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  margin: 10px;
+  border-bottom: 3px solid #630505;
+}
+
 body {
   background-color: #000000;
   font-family: 'Roboto', sans-serif;
