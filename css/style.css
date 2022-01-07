@@ -5,14 +5,25 @@ secondary color (green): #1A5C3C;
 secondary color (red):  #630505;
 text color (white): #FFFFFF;
 */
+* {
+  box-sizing: border-box;
+}
+
 header {
   background-color: #1A5C3C;
+  text-align: center;
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 10px;
   padding-left: 15px;
   margin: 10px;
   border-bottom: 3px solid #630505;
+  box-shadow: 0px 7px 6px 0px rgba(49, 50, 50, 0.63);
+  position: fixed;
+}
+
+main {
+  padding-top: 165px;
 }
 
 body {
@@ -24,41 +35,49 @@ body {
   color: #FFFFFF;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+picture {
+  display: block;
+  margin: auto 10px;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1em;
   font-weight: 400;
 }
 
-img {
-  width: 100%;
-}
-
 a {
-  color: #096ABD;
+  color: #1C98FD;
   text-decoration: none;
 }
 
-a:visited {}
-
+a:visited {
+  background-color: #952096;
 }
 
 a:hover,
@@ -73,12 +92,12 @@ a:active {
 
 .button {
   display: inline-block;
-  backround-color: #630505;
+  background-color: #1A5C3C;
   color: #FFFFFF;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #1A5C3C;
+  border-bottom: 2px solid #630505;
   transition: 0.2s opacity;
 }
 
@@ -88,23 +107,70 @@ a:active {
 }
 
 .button:active {
-  backround-color: #1A5C3C;
+  background-color: #1A5C3C;
   color: #FFFFFF;
 }
 
 .button.contact {
-  backround-color: transparent;
+  background-color: transparent;
   color: #FFFFFF;
   text-transform: uppercase;
   border: 2px solid #FFFFFF;
 }
 
 .button.contact:hover {
-  backround-color: #000000;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
 .button.contact:active {
   background-color: #FFFFFF;
   color: #000000;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 3px;
+  solid #630505;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+#hero {
+  backround-color: #1A5C3C;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1C98FD;
 }
