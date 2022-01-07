@@ -23,7 +23,7 @@ header {
 }
 
 main {
-  padding-top: 165px;
+  padding-top: 200px;
 }
 
 body {
@@ -76,9 +76,9 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  background-color: #952096;
-}
+/* a:visited {
+  color: #FFFFFF;
+} */
 
 a:hover,
 a:focus {
@@ -140,7 +140,7 @@ a:active {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 3px;
-  solid #630505;
+  solid: #630505;
 }
 
 .logo {
