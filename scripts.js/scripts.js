@@ -1,4 +1,10 @@
 console.log("Hello! Wecome to my portfolio website.")
-$(".button").on("click", function() {
-  $(this).hide();
-});
+
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
